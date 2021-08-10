@@ -7,7 +7,10 @@ import kotlin.math.abs
 import kotlin.math.min
 import kotlin.math.sin
 
-
+/**
+ * Helper methods to encode as MD5
+ * @see <a href="https://github.com/korlibs/kmem">korlibs/kmem</a>
+ */
 internal fun Int.rotateLeft(bits: Int): Int = ((this shl bits) or (this ushr (32 - bits)))
 
 internal fun arraycopy(src: ByteArray, srcPos: Int, dst: ByteArray, dstPos: Int, count: Int) =

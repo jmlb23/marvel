@@ -44,7 +44,6 @@ kotlin {
                 implementation("org.jetbrains.kotlin:kotlin-test-common:1.5.21")
                 implementation("org.jetbrains.kotlin:kotlin-test-annotations-common:1.5.21")
                 implementation("io.insert-koin:koin-test:3.1.2")
-
             }
         }
         val iosMain by getting {
