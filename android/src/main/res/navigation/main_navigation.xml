@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main_navigation"
+            app:startDestination="@id/listCharacterFragment">
+
+    <fragment android:id="@+id/listCharacterFragment"
+              android:name="com.github.jmlb23.android.screens.ListCharactersFragment"
+              android:label="list_character_fragment" tools:layout="@layout/fragment_list_characters">
+        <action android:id="@+id/action_listCharacterFragment_to_characterDetailFragment"
+                app:destination="@id/characterDetailFragment"/>
+    </fragment>
+    <fragment android:id="@+id/characterDetailFragment"
+              android:name="com.github.jmlb23.android.screens.CharacterDetailFragment"
+              android:label="fragment_character_detail" tools:layout="@layout/fragment_character_detail">
+        <argument android:name="id" app:argType="integer" app:nullable="false" />
+    </fragment>
+</navigation>
